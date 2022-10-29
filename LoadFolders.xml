@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <loadFolders>
 	<v1.0>
-		<li>/</li>
+		<li>Common</li>
 		<li>1.0</li>
-		<li IfModActive="rim.job.world">ThatOneModSupport</li>
-		<li IfModActive="Nals.FacialAnimation">FacialAnimation</li>
+		<li IfModActive="rim.job.world">ModSupport/ThatOneModSupport</li>
+		<li IfModActive="Nals.FacialAnimation">ModSupport/FacialAnimation</li>
 	</v1.0>
 	<v1.1>
-		<li>/</li>
+		<li>Common</li>
 		<li>1.1</li>
-		<li IfModActive="rim.job.world">ThatOneModSupport</li>
-		<li IfModActive="Nals.FacialAnimation">FacialAnimation</li>
+		<li IfModActive="rim.job.world">ModSupport/ThatOneModSupport</li>
+		<li IfModActive="Nals.FacialAnimation">ModSupport/FacialAnimation</li>
 	</v1.1>
 	<v1.2>
-		<li>/</li>
+		<li>Common</li>
 		<li>1.2</li>
-		<li IfModActive="rim.job.world">ThatOneModSupport</li>
-		<li IfModActive="Nals.FacialAnimation">FacialAnimation</li>
-		<li IfModActive="Mlie.MilkableColonists">ThatOtherModSupport</li>
-		<li IfModActive="mali.milk">ThatOtherModSupport</li>
-		<li IfModActive="tachyonite.pawnmorpher">ThatOtherOtherModSupport</li>
+		<li IfModActive="rim.job.world">ModSupport/ThatOneModSupport</li>
+		<li IfModActive="Nals.FacialAnimation">ModSupport/FacialAnimation</li>
+		<li IfModActive="Mlie.MilkableColonists">ModSupport/ThatOtherModSupport</li>
+		<li IfModActive="mali.milk">ModSupport/ThatOtherModSupport</li>
+		<li IfModActive="tachyonite.pawnmorpher">ModSupport/ThatOtherOtherModSupport</li>
 	</v1.2>
 	<v1.3>
-		<li>/</li>
+		<li>Common</li>
 		<li>1.3</li>
-		<li IfModActive="rim.job.world">ThatOneModSupport</li>
-		<li IfModActive="Nals.FacialAnimation">FacialAnimation</li>
-		<li IfModActive="Mlie.MilkableColonists">ThatOtherModSupport</li>
-		<li IfModActive="mali.milk">ThatOtherModSupport</li>
-		<li IfModActive="rjw.milk.humanoid">ThatOtherModSupport</li>
-		<li IfModActive="tachyonite.pawnmorpherpublic">ThatOtherOtherModSupport</li>
-		<li IfModActive="smashphil.neceros.srtsexpanded">SRTS</li>
+		<li IfModActive="rim.job.world">ModSupport/ThatOneModSupport</li>
+		<li IfModActive="Nals.FacialAnimation">ModSupport/FacialAnimation</li>
+		<li IfModActive="Mlie.MilkableColonists">ModSupport/ThatOtherModSupport</li>
+		<li IfModActive="mali.milk">ModSupport/ThatOtherModSupport</li>
+		<li IfModActive="rjw.milk.humanoid">ModSupport/ThatOtherModSupport</li>
+		<li IfModActive="tachyonite.pawnmorpherpublic">ModSupport/ThatOtherOtherModSupport</li>
+		<li IfModActive="smashphil.neceros.srtsexpanded">ModSupport/SRTS</li>
 	</v1.3>
 	<v1.4>
-		<li>/</li>
+		<li>Common</li>
 		<li>1.4</li>
-		<li IfModActive="Ludeon.RimWorld.Biotech">Biotech</li>
-		<li IfModActive="Nals.FacialAnimation">FacialAnimation</li>
-		<li IfModActive="rim.job.world">ThatOneModSupport</li>
-		<li IfModActive="Nals.FacialAnimation">FacialAnimation</li>
-		<li IfModActive="Mlie.MilkableColonists">ThatOtherModSupport</li>
-		<li IfModActive="mali.milk">ThatOtherModSupport</li>
-		<li IfModActive="rjw.milk.humanoid">ThatOtherModSupport</li>
-		<li IfModActive="tachyonite.pawnmorpherpublic">ThatOtherOtherModSupport</li>
-		<li IfModActive="smashphil.neceros.srtsexpanded">SRTS</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">ModSupport/Biotech</li>
+		<li IfModActive="Nals.FacialAnimation">ModSupport/FacialAnimation</li>
+		<li IfModActive="rim.job.world">ModSupport/ThatOneModSupport</li>
+		<li IfModActive="Nals.FacialAnimation">ModSupport/FacialAnimation</li>
+		<li IfModActive="Mlie.MilkableColonists">ModSupport/ThatOtherModSupport</li>
+		<li IfModActive="mali.milk">ModSupport/ThatOtherModSupport</li>
+		<li IfModActive="rjw.milk.humanoid">ModSupport/ThatOtherModSupport</li>
+		<li IfModActive="tachyonite.pawnmorpherpublic">ModSupport/ThatOtherOtherModSupport</li>
+		<li IfModActive="smashphil.neceros.srtsexpanded">ModSupport/SRTS</li>
 	</v1.4>
 </loadFolders>
