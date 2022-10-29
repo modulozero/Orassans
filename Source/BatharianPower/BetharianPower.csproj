@@ -47,21 +47,26 @@
     <Compile Include="Workers\PlaceWorker_ShowBetharianStone.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Lib.Harmony">
-      <Version>2.2.2</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/')">../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/RimWorldWin64_Data/Managed/')">$(RIMWORLD)/RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/')">../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/RimWorldWin64_Data/Managed/')">$(RIMWORLD)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/')">../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/RimWorldWin64_Data/Managed/')">$(RIMWORLD)/RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="0Harmony">
+      <HintPath Condition="Exists('../../../HarmonyRimWorld')">../../../AlienRaces/Current/Assemblies/0Harmony.dll</HintPath>
+      <HintPath Condition="Exists('../../../../../../workshop/content/294100/2009463077')">../../../../../../workshop/content/294100/2009463077/Current/Assemblies/0Harmony.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/../../workshop/content/294100/2009463077/')">$(RIMWORLD)/../../workshop/content/294100/2009463077/Current/Assemblies/0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

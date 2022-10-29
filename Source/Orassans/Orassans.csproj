@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Orassans</RootNamespace>
     <AssemblyName>Orassans</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -33,21 +33,33 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AlienRace">
-      <HintPath>..\..\..\AlienRaces Dev\1.4\Assemblies\AlienRace.dll</HintPath>
+    
+    <Reference Include="System" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/')">../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/RimWorldWin64_Data/Managed/')">$(RIMWORLD)/RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/')">../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/RimWorldWin64_Data/Managed/')">$(RIMWORLD)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath Condition="Exists('../../../../RimWorldWin64_Data/Managed/')">../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/RimWorldWin64_Data/Managed/')">$(RIMWORLD)/RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="0Harmony">
+      <HintPath Condition="Exists('../../../HarmonyRimWorld')">../../../AlienRaces/Current/Assemblies/0Harmony.dll</HintPath>
+      <HintPath Condition="Exists('../../../../../../workshop/content/294100/2009463077')">../../../../../../workshop/content/294100/2009463077/Current/Assemblies/0Harmony.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/../../workshop/content/294100/2009463077/')">$(RIMWORLD)/../../workshop/content/294100/2009463077/Current/Assemblies/0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath Condition="Exists('../../../AlienRaces')">../../../AlienRaces/1.4/Assemblies/AlienRace.dll</HintPath>
+      <HintPath Condition="Exists('../../../../../../workshop/content/294100/839005762/')">../../../../../../workshop/content/294100/839005762/1.4/Assemblies/AlienRace.dll</HintPath>
+      <HintPath Condition="Exists('$(RIMWORLD)/../../workshop/content/294100/839005762/')">$(RIMWORLD)/../../workshop/content/294100/839005762/1.4/Assemblies/AlienRace.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -73,11 +85,6 @@
     <Compile Include="SymbolResolver_OrassanBase.cs" />
     <Compile Include="Things\FrostPlant.cs" />
     <Compile Include="AI\ThinkNode_ConditionalIsOrassan.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Lib.Harmony">
-      <Version>2.2.2</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,7 +13,7 @@ namespace Orassan
     {
         static SymbolResolver_OrassanBase() => 
             CustomBaseUtility.AddMapResolver(new ResolverStruct(rp => rp.faction.def == OrassanDefOf.Orassan, "orassanBase", 100));
-
+    
         const int width = 17;
         const int height = 15;
 
